@@ -65,10 +65,10 @@
 
         
         if(prediction[0].probability.toFixed(2) > 0.80){
-            const music = new Audio('musics/正解.mp3');
-           music.play();
+            var audio = new Audio('正解.mp3');
+           audio.play();
           }else if(prediction[1].probability.toFixed(2) > 0.80){
-            const music = new Audio('musics/不正解.mp3');
+            var audio = new Audio('不正解.mp3');
            music.play();
           }
     }

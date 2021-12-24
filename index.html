@@ -63,12 +63,10 @@
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
         if(prediction[0].probability.toFixed(2) > 0.80){
-          
-         const music = new Audio('musics/正解.mp3');
+          const music = new Audio('musics/正解.mp3');
          music.play();
         }else if(prediction[1].probability.toFixed(2) > 0.80){
-             
-            const music = new Audio('musics/不正解.mp3');
+          const music = new Audio('musics/不正解.mp3');
          music.play();
         }
     }

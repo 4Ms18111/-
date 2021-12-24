@@ -67,10 +67,11 @@
         if(prediction[0].probability.toFixed(2) > 0.80){
             var audio = new Audio('正解.mp3');
            audio.play();
-          }else if(prediction[1].probability.toFixed(2) > 0.80){
+          } else if(prediction[1].probability.toFixed(2) > 0.80){
             var audio = new Audio('不正解.mp3');
            music.play();
           }
+          labelContainer.childNodes[i].innerHTML = `${name}: ${value}`;
     }
 </script>
 
